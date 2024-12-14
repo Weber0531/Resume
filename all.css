@@ -3,78 +3,167 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* rwd img css，可當作 CSS Reset 其中一個 */
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 /* 全域 border box */
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-body{
+body {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-i{
+i {
     margin-right: 5px;
     font-size: 20px;
 }
 
-.period{
-    color:darkgrey;
+.period {
+    color: darkgrey;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header setting */
-.header{
+.header {
     display: flex;
     background-color: black;
     color: white;
@@ -82,17 +171,17 @@ i{
     padding: 10px;
 }
 
-.leftIntro{
+.leftIntro {
     margin: 20px;
 }
 
-.leftIntro h1{
+.leftIntro h1 {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
 /* 相框設置，變圓形，多餘的隱藏 */
-.avatar-frame{
+.avatar-frame {
     max-width: 50%;
     border-radius: 50%;
     overflow: hidden;
@@ -100,77 +189,82 @@ i{
 }
 
 /* 讓大頭照符合相框 */
-.headshot{
+.headshot {
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
-.rightIntro{
+.rightIntro {
     margin: 20px;
     max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.rightIntro p{
+.rightIntro p {
+    font-size: 18px;
     line-height: normal;
-    margin-bottom: 130px;
 }
 
-.links{
+.links {
     display: flex;
 }
 
-.links a{
+.links a {
     text-decoration: none;
     color: white;
     margin-right: 20px;
 }
 
 /* Work experience */
-.work-experience h2, .education h2, .projects h2{
+.work-experience h2,
+.education h2,
+.projects h2 {
     font-size: 24px;
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 30px;
 }
 
-.work-experience img{
+.work-experience img {
     max-width: 10%;
     margin-right: 20px;
 }
 
-.youpinit{
+.youpinit {
     display: flex;
     margin-bottom: 30px;
 }
 
-.uq{
+.uq {
     display: flex;
     margin-bottom: 30px;
 }
 
-.cafe{
+.cafe {
     display: flex;
     margin-bottom: 30px;
 }
 
-.wowprime{
+.wowprime {
     display: flex;
     margin-bottom: 30px;
 }
 
-.work-experience .period{
+.work-experience .period {
     margin-right: 100px;
 }
 
-.work h3{
+.work h3 {
     font-size: 20px;
     color: darkslategrey;
     margin-bottom: 20px;
 }
 
-.work li{
+.work li {
     list-style-type: disc;
     line-height: 1.5;
     color: dimgray;
@@ -178,73 +272,112 @@ i{
 }
 
 /* Education */
-.education .avatar-frame{
+.education .avatar-frame {
     max-width: 15%;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 20px;
 }
 
-.school{
+.school {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.educationLeft{
+.educationLeft {
     display: flex;
 }
 
-.description h2{
+.description h2 {
     margin-bottom: 10px;
 }
 
-.description h3{
+.description h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.description p{
+.description p {
     color: lightslategray;
     line-height: normal;
 }
 
 /* Projects */
-.projects hr{
+.projects hr {
     margin-bottom: 30px;
 }
 
-.app, .shanghai{
+.app,
+.shanghai {
     display: flex;
     margin-bottom: 30px;
 }
 
-.app img, .shanghai img{
+.app img,
+.shanghai img {
     max-width: 40%;
     margin-right: 20px;
 }
 
-.app .description h2, .shanghai .description h2{
+.app .description h2,
+.shanghai .description h2 {
     text-align: center;
 }
 
 /* Skills */
-.skills{
+.skills {
     display: flex;
     background-color: black;
     justify-content: space-around;
     padding: 20px;
 }
 
-.skills h2{
+.skills h2 {
     font-size: 24px;
     font-weight: bold;
     color: white;
 }
 
-.skills li{
+.skills li {
     list-style-type: disc;
     line-height: 1.5;
     color: white;
     margin-left: 18px;
+}
+
+/* under 576px device */
+@media(max-width:576px) {
+    i {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 5px;
+    }
+
+    .leftIntro, .rightIntro {
+        margin: 10px;
+    }
+
+    .leftIntro h1 {
+        font-size: 20px;
+    }
+
+    .avatar-frame {
+        max-width: 80%;
+    }
+
+    .rightIntro p {
+        font-size: 16px;
+    }
+
+    .links a {
+        margin-right: 5px;
+    }
+
+    .text{
+        display: none;
+    }
 }
