@@ -162,12 +162,15 @@ i {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.work-experience, .education, .projects{
+    margin-bottom: 100px;
+}
 /* header setting */
 .header {
     display: flex;
     background-color: black;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 10px;
 }
 
@@ -234,27 +237,14 @@ i {
     margin-right: 20px;
 }
 
-.youpinit {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.uq {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.cafe {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.wowprime {
+.youpinit, .uq, .cafe, .wowprime {
     display: flex;
     margin-bottom: 30px;
 }
 
 .work-experience .period {
+    min-width: 10%;
+    max-width: 30%;
     margin-right: 100px;
 }
 
@@ -350,7 +340,7 @@ i {
 @media(max-width:576px) {
     i {
         margin-right: 20px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .header {
@@ -361,16 +351,25 @@ i {
         margin: 10px;
     }
 
+    .leftIntro i {
+        margin-right: 5px;
+    }
+
     .leftIntro h1 {
         font-size: 20px;
     }
 
+    .leftIntro h2 {
+        display: inline;
+        font-size: 14px;
+    }
+
     .avatar-frame {
-        max-width: 80%;
+        max-width: 70%;
     }
 
     .rightIntro p {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .links a {
